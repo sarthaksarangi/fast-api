@@ -1,0 +1,15 @@
+{
+  "folders": [
+    { "name": "book-keeper", "path": "book-keeper" },
+    { "name": "dabewalla", "path": "dabewalla" },
+    { "name": "pincode", "path": "pincode" },
+    { "name": "rangmatch", "path": "rangmatch" },
+    { "name": "resturant-menu", "path": "resturant-menu" },
+    { "name": "rag", "path": "rag" }
+  ],
+  "settings": {
+    "python-envs.defaultEnvManager": "ms-python.python:venv",
+    "python.venvFolders": [".venv", "venv"],
+    "python.terminal.activateEnvironment": true
+  }
+}

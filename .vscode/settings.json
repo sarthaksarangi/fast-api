@@ -1,3 +1,5 @@
 {
-    "python-envs.defaultEnvManager": "ms-python.python:system"
+    "python-envs.defaultEnvManager": "ms-python.python:venv",
+    "python.venvFolders": [".venv", "venv"],
+    "python.terminal.activateEnvironment": true
 }

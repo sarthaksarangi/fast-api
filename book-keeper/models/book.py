@@ -31,6 +31,10 @@ class BookCreateResponse(BaseModel):
     is_sold: bool
     owner_id: int
 
+class BookUpdate(BaseModel):
+    price: Optional[int] = None
+    is_sold: Optional[bool] = None
+
 
 #Avoid circular import error
 from models.user import User
