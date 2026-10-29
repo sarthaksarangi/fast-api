@@ -1,11 +1,16 @@
 import base64
 import json
 import os
-from google import genai
+from openai import OpenAI
 
-GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
+client = OpenAI()
 
-client = genai.Client(api_key=GEMINI_API_KEY)
+response = client.responses.create(
+    model="gpt-6-luna",
+    input="Write a one-sentence bedtime story about a unicorn.",
+)
+
+print(response.output_text)
 CROP_ANALYSIS_PROMPT = """
     You are an expert agricultural scientist specializing in crop disease detection.
 Analyze this image of a crop/plant and provide a detailed disease assessment.
